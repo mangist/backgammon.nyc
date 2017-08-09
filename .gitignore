@@ -31,5 +31,9 @@ sysinfo.txt
 
 # Builds
 *.apk
+<<<<<<< HEAD
 *.unitypackage
 Client/Library/assetDatabase3
+=======
+*.unitypackage
+>>>>>>> 716bfcd2b824416d5045625492cad457d2d0f9a8

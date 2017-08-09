@@ -244,6 +244,9 @@ MonoBehaviour:
 >>>>>>> a8626a87876d4d3b70d7395cf16315cdbf3b7d65
   m_MinSize: {x: 406, y: 492}
 >>>>>>> b194b38938c7a24cc60d23ab2f86906a1e808ca8
+<<<<<<< HEAD
+>>>>>>> 716bfcd2b824416d5045625492cad457d2d0f9a8
+=======
 >>>>>>> 716bfcd2b824416d5045625492cad457d2d0f9a8
   m_MaxSize: {x: 10002, y: 14042}
   vertical: 1
@@ -283,6 +286,9 @@ MonoBehaviour:
   m_MinSize: {x: 406, y: 221}
   m_MaxSize: {x: 8006, y: 4021}
 >>>>>>> b194b38938c7a24cc60d23ab2f86906a1e808ca8
+<<<<<<< HEAD
+>>>>>>> 716bfcd2b824416d5045625492cad457d2d0f9a8
+=======
 >>>>>>> 716bfcd2b824416d5045625492cad457d2d0f9a8
   vertical: 0
   controlID: 11
@@ -388,11 +394,14 @@ MonoBehaviour:
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_SelectedIDs: 18260000
     m_LastClickedID: 9752
     m_ExpandedIDs: 00000000182600002226000000ca9a3bffffff7f
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> 716bfcd2b824416d5045625492cad457d2d0f9a8
     m_SelectedIDs: 2e260000
     m_LastClickedID: 9774
 =======
@@ -553,14 +562,20 @@ MonoBehaviour:
     m_SelectedIDs: 
     m_LastClickedID: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_ExpandedIDs: 16fcffff18fcffff00000000ac260000
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> 716bfcd2b824416d5045625492cad457d2d0f9a8
     m_ExpandedIDs: 14fcffff16fcffff18fcffff1afcffff00000000a0260000
 =======
     m_ExpandedIDs: 16fcffff18fcffff1afcffff000000009e260000
 >>>>>>> a8626a87876d4d3b70d7395cf16315cdbf3b7d65
 >>>>>>> b194b38938c7a24cc60d23ab2f86906a1e808ca8
+<<<<<<< HEAD
+>>>>>>> 716bfcd2b824416d5045625492cad457d2d0f9a8
+=======
 >>>>>>> 716bfcd2b824416d5045625492cad457d2d0f9a8
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -612,7 +627,11 @@ MonoBehaviour:
     height: 552
   m_SceneLighting: 1
 <<<<<<< HEAD
+<<<<<<< HEAD
   lastFramingTime: 43.99398429751149
+=======
+  lastFramingTime: 70.81647069403768
+>>>>>>> 716bfcd2b824416d5045625492cad457d2d0f9a8
 =======
   lastFramingTime: 70.81647069403768
 >>>>>>> 716bfcd2b824416d5045625492cad457d2d0f9a8
@@ -621,9 +640,15 @@ MonoBehaviour:
   m_AudioPlay: 0
   m_Position:
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_Target: {x: 0.1737, y: 0.07603597, z: 0}
     speed: 2
     m_Value: {x: 0.1737, y: 0.07603597, z: 0}
+=======
+    m_Target: {x: -0.00089921936, y: 0.048881352, z: 0.12193403}
+    speed: 2
+    m_Value: {x: -0.00089921936, y: 0.048881352, z: 0.12193403}
+>>>>>>> 716bfcd2b824416d5045625492cad457d2d0f9a8
 =======
     m_Target: {x: -0.00089921936, y: 0.048881352, z: 0.12193403}
     speed: 2
@@ -652,7 +677,11 @@ MonoBehaviour:
       m_Value: 0
   m_Rotation:
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_Target: {x: -0.08717229, y: 0.89959055, z: -0.21045254, w: -0.3726226}
+=======
+    m_Target: {x: -0.5340629, y: -0.0000000028497267, z: 0.000000005826637, w: -0.8454447}
+>>>>>>> 716bfcd2b824416d5045625492cad457d2d0f9a8
     speed: 2
     m_Value: {x: -0.08717229, y: 0.89959055, z: -0.21045254, w: -0.3726226}
   m_Size:
@@ -662,6 +691,9 @@ MonoBehaviour:
 =======
     m_Target: {x: -0.5340629, y: -0.0000000028497267, z: 0.000000005826637, w: -0.8454447}
     speed: 2
+<<<<<<< HEAD
+    m_Value: {x: -0.534063, y: -0.000000002849727, z: 0.0000000058266374, w: -0.84544474}
+=======
 <<<<<<< HEAD
     m_Value: {x: -0.534063, y: -0.000000002849727, z: 0.0000000058266374, w: -0.84544474}
 =======
@@ -683,6 +715,9 @@ MonoBehaviour:
     m_Value: 0.40075213
 >>>>>>> a8626a87876d4d3b70d7395cf16315cdbf3b7d65
 >>>>>>> b194b38938c7a24cc60d23ab2f86906a1e808ca8
+<<<<<<< HEAD
+>>>>>>> 716bfcd2b824416d5045625492cad457d2d0f9a8
+=======
 >>>>>>> 716bfcd2b824416d5045625492cad457d2d0f9a8
   m_Ortho:
     m_Target: 0
