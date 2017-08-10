@@ -3,21 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class DiceManager : MonoBehaviour {
-    
-    public class Dice
-    {
-        public string Name { get; set; }
-        public Rigidbody Body { get; set; }
-        public DiceState State { get; set; }
-        public Vector3 StartPosition { get; set; }
-    }
-
-    public enum DiceState
-    {
-        None,
-        Rolling,
-        Rolled
-    }
 
     // A list to store the dice Rigidbodies
     private static List<Dice> dice = new List<Dice>();
