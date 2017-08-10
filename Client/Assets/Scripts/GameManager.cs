@@ -40,6 +40,9 @@ public class GameManager : MonoBehaviour {
         var lowerRight = new Vector3(0.1522381f, 0.124089f, 0);
         var lowerLeft = new Vector3(-0.1522381f, 0.124089f, 0);
 
+        var topLeft = new Vector3(-0.1522381f, -0.124089f, 0);
+        var topRight = new Vector3(0.1522381f, -0.124089f, 0);
+
         var position = lowerRight;
 
         // Bottom right quadrant
@@ -59,13 +62,29 @@ public class GameManager : MonoBehaviour {
             position.x += Checker.Width;
         }
 
-
+        position = topLeft;
         // Second side of the board
-        for (int i = 0; i < 12; i ++)
+        for (int i = 12; i < 18; i ++)
         {
-
+            // Calculate what the position of this point is in world space
+            points.Add(i + 1, new Point(i + 1, position));
+            position.x += Checker.Width;
         }
 
+        position = topRight;
+        // Second side of the board
+        for (int i = 23; i > 17; i--)
+        {
+            // Calculate what the position of this point is in world space
+            points.Add(i + 1, new Point(i + 1, position));
+            position.x -= Checker.Width;
+        }
+
+        // Debug - print out points on the board
+        foreach (var p in points)
+        {
+            Debug.Log(string.Format("Point at X:{0} Y:{1} Z:{2}", p.Value.Position.x, p.Value.Position.y, p.Value.Position.z));
+        }
         // Keep a singleton instance of the manager
         Instance = this;
 	}
@@ -90,7 +109,7 @@ public class GameManager : MonoBehaviour {
 
         // Add to destination point
         toPoint.AddChecker(checker);
-
+        
     }
 
     private Point GetPoint(int position)

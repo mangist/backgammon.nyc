@@ -15,7 +15,7 @@ public class Checker : MonoBehaviour {
     // Use this for initialization
 	void Start () {
         // What is the default rotation for this piece in the world space
-        DefaultRotation = Quaternion.identity;
+        DefaultRotation = Quaternion.Euler(-90.0f, 0, 0);
         Width = 0.02279646f;
     }
 	

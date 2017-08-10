@@ -7,14 +7,14 @@ public class Point
     public List<Checker> Checkers { get; private set; }
     public int Number { get; private set; }
 
-    private Vector3 position;
+    public Vector3 Position;
 
     public Point(int number, Vector3 position)
     {
         this.Checkers = new List<Checker>();
         this.Number = number;
 
-        this.position = position;
+        this.Position = position;
     }
 
     public void AddChecker(Checker checker)
@@ -30,11 +30,11 @@ public class Point
         // Now move the object (this is instant, I want to animate this at some point!)
         if (zIncrease)
         {
-            ct.position = this.position + new Vector3(0, 0, Checker.Width * Checkers.Count);
+            ct.position = this.Position + new Vector3(0, 0, Checker.Width * (Checkers.Count+1));
         }
         else
         {
-            ct.position = this.position - new Vector3(0, 0, Checker.Width * Checkers.Count);
+            ct.position = this.Position - new Vector3(0, 0, Checker.Width * (Checkers.Count+1));
         }
 
         ct.rotation = Checker.DefaultRotation;
