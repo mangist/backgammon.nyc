@@ -6,6 +6,7 @@ public class DiceManager : MonoBehaviour {
     
     public class Dice
     {
+        public string Name { get; set; }
         public Rigidbody Body { get; set; }
         public DiceState State { get; set; }
         public Vector3 StartPosition { get; set; }
@@ -32,6 +33,7 @@ public class DiceManager : MonoBehaviour {
 
             dice.Add(new Dice
             {
+                Name = d.name,
                 Body = rb,
                 StartPosition = rb.position,
                 State = DiceState.None
@@ -47,11 +49,13 @@ public class DiceManager : MonoBehaviour {
         {
             if (die.State == DiceState.Rolling)
             {
-                if (die.Body.velocity == Vector3.zero)
+                if (die.Body.IsSleeping())
                 {
                     Debug.Log(
-                        string.Format("Dice has stopped moving (rotation={0})", die.Body.rotation));
-
+                        string.Format("Dice {0} has stopped moving (rotation={1}", 
+                        die.Name,
+                        die.Body.rotation));
+                                        
                     // Now calculate the value on the dice
                     die.State = DiceState.Rolled;
                 }

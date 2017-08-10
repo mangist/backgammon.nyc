@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.37311926, g: 0.38074008, b: 0.35872707, a: 1}
+  m_IndirectSpecularColor: {r: 0.37311953, g: 0.38074014, b: 0.3587274, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -897,6 +897,35 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4d1083129cc2a264eba42180e5f98433, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1616036055 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 100006, guid: e47f4d59e0811c04f8b4ac05d1e4951c, type: 3}
+  m_PrefabInternal: {fileID: 955990288}
+--- !u!114 &1616036056
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1616036055}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f88e47b93c0ad74185f7fdfecedf21f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startColor: {r: 0, g: 0, b: 0, a: 0}
+  mouseOverColor: {r: 0, g: 0, b: 0, a: 0}
+--- !u!65 &1616036057
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1616036055}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.02279646, y: 0.022450138, z: 0.004652472}
+  m_Center: {x: 0, y: -0.000000034458935, z: -4.656613e-10}
 --- !u!1 &1764405725
 GameObject:
   m_ObjectHideFlags: 0
