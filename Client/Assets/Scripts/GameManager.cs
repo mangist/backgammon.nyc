@@ -8,14 +8,13 @@ public class GameManager : MonoBehaviour {
     private List<Checker> checkers = new List<Checker>();
     private Dictionary<int, Point> points = new Dictionary<int, Point>();
 
-    private Vector3 checkerStartPosition;
-
     public static GameManager Instance { get; private set; }
 
 	// Use this for initialization
 	void Start () {
 
-        checkerStartPosition = new Vector3(0, 0.5f, 0);
+        var whiteStart = new Vector3(-0.05f, 0.3f, 0);
+        var blackStart = new Vector3(0.05f, 0.3f, 0);
 
         var white_checker = GameObject.FindGameObjectsWithTag(Tags.WhiteChecker).First();
         var black_checker = GameObject.FindGameObjectsWithTag(Tags.BlackChecker).First();
@@ -25,23 +24,33 @@ public class GameManager : MonoBehaviour {
         for (int i = 0; i < 15; i ++)
         {
             // Spawn a new checker for each side
-            var white = GameObject.Instantiate(white_checker, checkerStartPosition, Random.rotation);
-            var black = GameObject.Instantiate(black_checker, checkerStartPosition, Random.rotation);
+            var white = GameObject.Instantiate(white_checker, whiteStart, Random.rotation);
+            white.name = string.Format("WhiteChecker_{0}", i + 1);
+
+            var black = GameObject.Instantiate(black_checker, blackStart, Random.rotation);
+            black.name = string.Format("BlackChecker_{0}", i + 1);
 
             // Keep a reference to our checker objects
             checkers.Add(new Checker { Player = Player.White, Object = white });
             checkers.Add(new Checker { Player = Player.Black, Object = black });
 
             // Move higher with the start positions (approx height of the checker)
-            checkerStartPosition.y += Checker.Width;
+            whiteStart.y += Checker.Width;
+            blackStart.y += Checker.Width;
         }
 
-        // Setup points list for the game board
-        var lowerRight = new Vector3(0.1522381f, 0, 0.124089f);
-        var lowerLeft = new Vector3(-0.1522381f, 0, 0.124089f);
+        // Delete the template objects
+        GameObject.Destroy(white_checker);
+        GameObject.Destroy(black_checker);
 
-        var topLeft = new Vector3(-0.1522381f, 0, -0.124089f);
-        var topRight = new Vector3(0.1522381f, 0, -0.124089f);
+        var startHeightOfCheckers = 0.03f;
+
+        // Setup points list for the game board
+        var lowerRight = new Vector3(0.1522381f, startHeightOfCheckers, 0.124089f);
+        var lowerLeft = new Vector3(-0.1522381f, startHeightOfCheckers, 0.124089f);
+
+        var topLeft = new Vector3(-0.1522381f, startHeightOfCheckers, -0.124089f);
+        var topRight = new Vector3(0.1522381f, startHeightOfCheckers, -0.124089f);
 
         var position = lowerRight;
 
